@@ -1,0 +1,38 @@
+
+    <!DOCTYPE html>
+    <html xp-run-server-url="https://xpla.org" xp-presence-url="wss://presence.xpla.org">
+      <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Sprint 2 - Zadania</title>
+        <script src="https://xpla.org/static/js/slide_loader.3.0.0.js"></script>
+      </head>
+
+      <body class="xp-slide">
+        <div class="xp-row center" style="height: 100%">
+          <h1>Sprint 2 - Zadania</h1>
+          <xp-tasks time="45">
+  <ol>
+    <li class="xp-basic">
+      Wyciągnij i wyświetl listę ostatnich bloków.
+      Dla każdego bloku wyświetl: <code>hash</code>, <code>numer</code>, <code>parent_hash</code> i liczbę transakcji. <br />
+      Metody do wykorzystania: <code>eth_getBlockByNumber</code>
+    </li>
+    <li class="xp-advanced">
+      Dla ostatniego bloku wyświetl szczegóły wszystkich jego transakcji: nadawcę, adresata, wartość, <code>gas</code>, <code>gasPrice</code> (wyjaśnienie później) i dane. <br />
+      Metody do wykorzystania: <code>eth_getTransactionByHash</code>
+    </li>
+    <li class="xp-extra">
+      Wyświetl status transakcji (czy zakończyła się poprawnie) i ile <code>gas</code>u zużyła.
+      Metody do wykorzystania: <code>eth_getTransactionReceipt</code>
+    </li>
+    <li class="xp-extra">
+      Zadbaj o to, żeby wyniki automatycznie się uaktualniały.
+    </li>
+  </ol>
+</xp-tasks>
+
+        </div>
+      </body>
+    </html>
+  

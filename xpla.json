@@ -1,0 +1,60 @@
+{
+  "xpla.version": 1,
+  "name": "Blockchain DevMeeting",
+  "author": {
+    "name": "Tomasz Drwięga",
+    "link": "https://twitter.com/tomusdrw"
+  },
+  "dirs": [
+    {
+      "name": "1-blockchain",
+      "title": "Czym jest blockchain",
+      "slides": [
+        {
+          "name": "tasks",
+          "title": "Sprint 1 - Zadania"
+        }
+      ]
+    },
+    {
+      "name": "2-web3",
+      "title": "Interakcja z blockchainem",
+      "slides": [
+        {
+          "name": "tasks",
+          "title": "Sprint 2 - Zadania"
+        }
+      ]
+    },
+    {
+      "name": "3-smart-contracts",
+      "title": "Smart Kontrakty",
+      "slides": [
+        {
+          "name": "tasks",
+          "title": "Sprint 3 - Zadania"
+        }
+      ]
+    },
+    {
+      "name": "4-truffle",
+      "title": "Interakcja z kontraktami",
+      "slides": [
+        {
+          "name": "tasks",
+          "title": "Sprint 4 - Zadania"
+        }
+      ]
+    },
+    {
+      "name": "5-more",
+      "title": "Blockchain. Co dalej.",
+      "slides": [
+        {
+          "name": "1-patterns",
+          "title": "Solidity - wzorce"
+        }
+      ]
+    }
+  ]
+}

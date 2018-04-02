@@ -1,0 +1,18 @@
+<xp-tasks time="75">
+  <ol>
+    <li class="xp-basic">
+      Wyświetl stan (wartość, nadawcę, odbiorcę i arbitra) kontaktu Escrow na konsoli.
+    </li>
+    <li class="xp-basic">
+      Napisz serwer HTTP, który zwraca szczegóły (stan i adres) z kontraktu Escrow w postaci JSON.
+    </li>
+    <li class="xp-advanced">
+      Napisz serwer HTTP, który jest arbitrem kontraktu Escrow. Powinien wysłać transakcję wypłaty w momencie kiedy
+      ktoś wykona <code>POST /release/&lt;address&gt;</code> i określone dodatkowe warunki będą spełnione (np. określony czas lub balans na innym koncie).
+    </li>
+    <li class="xp-extra">
+      Napisz serwer HTTP, który pozwala na dostęp tylko w momencie kiedy została dokonana opłata. <br />
+      Dodaj nagłówek autoryzacyjny, który zawiera sygnaturę z adresu, który powinien mieć dostęp.
+    </li>
+  </ol>
+</xp-tasks>
