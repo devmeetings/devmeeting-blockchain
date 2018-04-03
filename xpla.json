@@ -11,6 +11,10 @@
       "title": "Czym jest blockchain",
       "slides": [
         {
+          "name": "1-slides",
+          "title": "Slajdy"
+        },
+        {
           "name": "tasks",
           "title": "Sprint 1 - Zadania"
         }
@@ -20,6 +24,18 @@
       "name": "2-web3",
       "title": "Interakcja z blockchainem",
       "slides": [
+        {
+          "name": "1-node",
+          "title": "Node"
+        },
+        {
+          "name": "2-jsonrpc",
+          "title": "JSON-RPC"
+        },
+        {
+          "name": "3-programatic",
+          "title": "Dostęp z node.js"
+        },
         {
           "name": "tasks",
           "title": "Sprint 2 - Zadania"

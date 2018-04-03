@@ -1,0 +1,24 @@
+<details>
+  <h1>Czym jest JSON-RPC</h1>
+  <p>
+    <a href="http://www.jsonrpc.org/specification">JSON-RPC</a> to prosty bez-stanowy i niezależny od transpotu protokół wywoływania zdalnych metod (Remote Procedure).
+  </p>
+  <p>Przykład żądania i odpowiedzi:</p>
+  <pre>
+{
+  "jsonrpc": "2.0",
+  "id": 3,
+  "method": "subtract",
+  "params": [{"minuend": 42, "subtrahend": 23}, 5]
+}
+  </pre>
+  <pre>
+{
+  "jsonrpc": "2.0",
+  "result": 19,
+  "id": 3
+}
+  </pre>
+  
+  <p><a href="https://wiki.parity.io/JSONRPC">Lista metod dostępnych w Parity</a></p>
+</details>
