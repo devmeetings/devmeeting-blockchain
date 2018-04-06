@@ -1,0 +1,9 @@
+{
+  "name": "dm-web3",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "isomorphic-fetch": "^2.2.1",
+    "web3": "^1.0.0-beta.33"
+  }
+}

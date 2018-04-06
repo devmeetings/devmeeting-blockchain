@@ -37,6 +37,14 @@
           "title": "Dostęp z node.js"
         },
         {
+          "name": "4-web3",
+          "title": "Web3"
+        },
+        {
+          "name": "5-web3tx",
+          "title": "Transakcje w Web3"
+        },
+        {
           "name": "tasks",
           "title": "Sprint 2 - Zadania"
         }
@@ -47,6 +55,10 @@
       "title": "Smart Kontrakty",
       "slides": [
         {
+          "name": "1-smartcontracts",
+          "title": "Smart Contracts"
+        },
+        {
           "name": "tasks",
           "title": "Sprint 3 - Zadania"
         }
@@ -56,6 +68,10 @@
       "name": "4-truffle",
       "title": "Interakcja z kontraktami",
       "slides": [
+        {
+          "name": "1-web3",
+          "title": "Kontrakty w Web3"
+        },
         {
           "name": "tasks",
           "title": "Sprint 4 - Zadania"
@@ -69,7 +85,12 @@
         {
           "name": "1-patterns",
           "title": "Solidity - wzorce"
+        },
+        {
+          "name": "2-rust",
+          "title": "pWASM"
         }
+
       ]
     }
   ]

@@ -1,0 +1,61 @@
+
+    <!DOCTYPE html>
+    <html xp-run-server-url="https://xpla.org" xp-presence-url="wss://presence.xpla.org">
+      <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>JSON-RPC</title>
+        <script src="https://xpla.org/static/js/slide_loader.3.0.0.js"></script>
+      </head>
+      <body class="xp-slide">
+        <div class="xp-row with-comments">
+          
+    
+    <div class="xp-column">
+      <xp-editor active="requests.sh" >
+        	<script id="requests.sh" highlight="0-45" type="application/octetstream" src="002/requests.sh"></script>
+      </xp-editor>
+    </div>
+  
+    <div class="xp-resize-column"></div>
+    
+    <div class="xp-column">
+      <xp-preview  runner="html"></xp-preview>
+    </div>
+  
+  
+        </div>
+        <div class="xp-resize-row"></div>
+        <div class="xp-row comments">
+          <xp-annotations>
+            <header><h1>JSON-RPC</h1></header>
+            <details>
+  <h1>Czym jest JSON-RPC</h1>
+  <p>
+    <a href="http://www.jsonrpc.org/specification">JSON-RPC</a> to prosty bez-stanowy i niezależny od transpotu protokół wywoływania zdalnych metod (Remote Procedure).
+  </p>
+  <p>Przykład żądania i odpowiedzi:</p>
+  <pre>
+{
+  "jsonrpc": "2.0",
+  "id": 3,
+  "method": "subtract",
+  "params": [{"minuend": 42, "subtrahend": 23}, 5]
+}
+  </pre>
+  <pre>
+{
+  "jsonrpc": "2.0",
+  "result": 19,
+  "id": 3
+}
+  </pre>
+  
+  <p><a href="https://wiki.parity.io/JSONRPC">Lista metod dostępnych w Parity</a></p>
+</details>
+
+          </xp-annotations>
+        </div>
+      </body>
+    </html>
+  
