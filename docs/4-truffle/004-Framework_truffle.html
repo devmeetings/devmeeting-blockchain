@@ -7,19 +7,39 @@
         <title>Framework truffle</title>
         <script src="https://xpla.org/static/js/slide_loader.3.0.0.js"></script>
       </head>
-
       <body class="xp-slide">
-        <div class="xp-row center with-comments">
+        <div class="xp-row with-comments">
           
-    <header><h1>Framework truffle</h1></header>
-    
+    <div class="xp-column" style="width: 100%">
+      <xp-editor active="build/contracts/Lock.json" >
+        	<script id="build/contracts/Lock.json" highlight="0-3305" type="application/octetstream" src="004/build/contracts/Lock.json"></script>
+	<script id="build/contracts/Migrations.json" highlight="0-1386" type="application/octetstream" src="004/build/contracts/Migrations.json"></script>
+	<script id="contracts/Lock.sol" highlight="0-32" type="application/octetstream" src="004/contracts/Lock.sol"></script>
+	<script id="contracts/Migrations.sol" highlight="0-23" type="application/octetstream" src="004/contracts/Migrations.sol"></script>
+	<script id="migrations/1_initial_migration.js" highlight="0-9" type="application/octetstream" src="004/migrations/1_initial_migration.js"></script>
+	<script id="test/Lock.js" highlight="0-12" type="application/octetstream" src="004/test/Lock.js"></script>
+	<script id="truffle.js" highlight="0-13" type="application/octetstream" src="004/truffle.js"></script>
+      </xp-editor>
+    </div>
   
         </div>
         <div class="xp-resize-row"></div>
         <div class="xp-row comments">
-          <xp-annotations modal>
-            <header><h1 style="display: none">Framework truffle</h1></header>
-            
+          <xp-annotations>
+            <header><h1>Framework truffle</h1></header>
+            <details>
+  <h1>Testowanie z truffle</h1>
+  <p>
+    Spójrzmy jak za pomocą frameworku <code>truffle</code> możemy testować kontrakty.
+  </p>
+  <p>Zaczynamy od zainstalowania truffle i ganache:<br/>
+    <code>$ npm install -g truffle ganache-cli</code>
+  </p>
+  <p>
+    Wersję ganache z UI możemy też pobrać z <a href="http://truffleframework.com/ganache/">http://truffleframework.com/ganache/</a>
+  </p>
+</details>
+
           </xp-annotations>
         </div>
       </body>
