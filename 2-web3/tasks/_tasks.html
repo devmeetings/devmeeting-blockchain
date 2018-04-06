@@ -1,4 +1,4 @@
-<xp-tasks time="45">
+<xp-tasks time="60">
   <ol>
     <li class="xp-basic">
       Wyciągnij i wyświetl listę ostatnich bloków.
@@ -9,12 +9,19 @@
       Dla ostatniego bloku wyświetl szczegóły wszystkich jego transakcji: nadawcę, adresata, wartość, <code>gas</code>, <code>gasPrice</code> (wyjaśnienie później) i dane. <br />
       Metody do wykorzystania: <code>eth_getTransactionByHash</code>
     </li>
+    <li class="xp-advanced">
+      Dodaj przycisk umożliwiający wysłanie tansakcji. Dodaj pola na: adres, wartość, <code>gas</code> i <code>gasPrice</code>
+    </li>
     <li class="xp-extra">
-      Wyświetl status transakcji (czy zakończyła się poprawnie) i ile <code>gas</code>u zużyła.
+      Wyświetl status transakcji (czy zakończyła się poprawnie) i ile <code>gas</code>u zużyła. <br />
       Metody do wykorzystania: <code>eth_getTransactionReceipt</code>
     </li>
     <li class="xp-extra">
       Zadbaj o to, żeby wyniki automatycznie się uaktualniały.
+    </li>
+    <li class="xp-extra">
+      Podczas wysyłania transakcji poczekaj na potwierdzenie (co najmniej 3 bloki). <br />
+      Metody do wykorzystania: <code>eth_getTransactionReceipt</code>
     </li>
   </ol>
 </xp-tasks>
