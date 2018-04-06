@@ -1,21 +1,21 @@
 const Web3 = require('web3')
+// 2/ Wczytujemy ABI i adres kontraktu
+const abi = require('./lock.abi.json')
+const contractAddress = '0x731a10897d267e19B34503aD902d0A29173Ba4B1'
 
 run()
 
 async function run () {
   const web3 = new Web3('http://localhost:8545')
 
-  const accounts = await web3.eth.getAccounts();
-  const from = accounts[0];
-  const to = from;
-  const value = 50000;
+  // Tworzymy nową instancję kontraktu na podstawie ABI i adresu
+  const contract = new web3.eth.Contract(abi, contractAddress)
 
-  try {
-    const txHash = await web3.eth.sendTransaction({
-      from, to, value
-    })
-    console.log(`Transaction sent with hash: ${txHash}`)
-  } catch (e) {
-    console.error(`Could not send transaction: ${e}`)
-  }
+  // 2/ Wywołujemy metodę `owner()` żeby odczytać stan kontraktu.
+  const contractOwner = await contract.methods.owner().call()
+  console.log(contractOwner)
+
+  // 2/ Tak samo możemy wywołać getter dla `locked`
+  const balance = await contract.methods.locked(contractOwner).call()
+  console.log(balance)
 }

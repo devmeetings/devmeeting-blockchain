@@ -1,6 +1,7 @@
 {
   "xpla.version": 1,
   "name": "Blockchain DevMeeting",
+  "link": "https://bit.ly/dm-blockchain",
   "author": {
     "name": "Tomasz Drwięga",
     "link": "https://twitter.com/tomusdrw"
@@ -71,6 +72,18 @@
         {
           "name": "1-web3",
           "title": "Kontrakty w Web3"
+        },
+        {
+          "name": "2-web3tx",
+          "title": "Wysyłanie transakcji"
+        },
+        {
+          "name": "3-server",
+          "title": "Serwer HTTP"
+        },
+        {
+          "name": "4-truffle",
+          "title": "Framework truffle"
         },
         {
           "name": "tasks",
