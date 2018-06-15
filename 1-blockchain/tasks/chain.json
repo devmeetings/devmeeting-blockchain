@@ -23,7 +23,7 @@
 		"eip658Transition": "0x0"
 	},
   "nodes": [
-    "enode://c2743df5d99fc4604825d61a3dd2ed36cfa6c168378795c912c1d9a92a8484747f388c9d1ceedbdf8507dd4c34f71d245c14dbecca3cb5df06ca82525c7dd376@138.201.178.161:30303"
+    "enode://90d8d0d9c47fd3f654b16f62b23dc132ee840dfecd712449d50e95d02af1889dc1a76a9d313a314c0b8ea6d66a9e9847aad1b6e8fdf24bdc70b5bb267553dcba@138.201.178.161:30303"
   ],
 	"genesis": {
 		"seal": {
