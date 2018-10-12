@@ -7,45 +7,35 @@
         <title>pWASM</title>
         <script src="https://xpla.org/static/js/slide_loader.3.0.0.js"></script>
       </head>
-
       <body class="xp-slide">
-        <div class="xp-row center with-comments">
-          <details>
-  <h1>WASM Contracts</h1>
-</details>
-<section>
-  <iframe
-    src="https://tomusdrw.github.io/wasm-oo7-tutorial/rust/index.html"
-    style="width: 100%; height: 100%"
-    width="576"
-    height="420"
-    scrolling="no"
-    frameborder="0"
-    webkitallowfullscreen mozallowfullscreen allowfullscreen
-  >
-  </iframe>
-</section>
-
+        <div class="xp-row with-comments">
+          
+    <div class="xp-column" style="width: 100%">
+      <xp-editor active="build.sh" >
+        	<script id="build.sh" type="application/octetstream" src="002/build.sh"></script>
+	<script id="Cargo.lock" type="application/octetstream" src="002/Cargo.lock"></script>
+	<script id="Cargo.toml" type="application/octetstream" src="002/Cargo.toml"></script>
+	<script id="src/lib.rs" highlight="0-78" type="application/octetstream" src="002/src/lib.rs"></script>
+      </xp-editor>
+    </div>
+  
         </div>
         <div class="xp-resize-row"></div>
         <div class="xp-row comments">
-          <xp-annotations modal>
-            <header><h1 style="display: none">pWASM</h1></header>
+          <xp-annotations>
+            <header><h1>pWASM</h1></header>
             <details>
   <h1>WASM Contracts</h1>
+  <p>
+    W niedalekiej* przyszłosci Ethereum będzie uruchamiać nie tylko kontakty w EVM ale też w Web Assembly (eWASM).
+  </p>
+  <p>
+    Implikuje to możliwość pisania kontraktów w dowolnym języku, który kompiluje się do WASM.
+  </p>
+  <p>
+    Zobaczmy jak moze to wyglądać na przykłądzie pWASM i kotraktu w Rust.
+  </p>
 </details>
-<section>
-  <iframe
-    src="https://tomusdrw.github.io/wasm-oo7-tutorial/rust/index.html"
-    style="width: 100%; height: 100%"
-    width="576"
-    height="420"
-    scrolling="no"
-    frameborder="0"
-    webkitallowfullscreen mozallowfullscreen allowfullscreen
-  >
-  </iframe>
-</section>
 
           </xp-annotations>
         </div>

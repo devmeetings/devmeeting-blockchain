@@ -11,7 +11,8 @@ contract Lock {
     function Lock() public { owner = msg.sender; }
 
     function lock() public payable {
-        locked[msg.sender].value += msg.value;
+        // NOTE bug below
+        locked[msg.sender].value = msg.value;
         locked[msg.sender].until = block.number + 5;
         
         // emit an event
@@ -21,8 +22,10 @@ contract Lock {
         LockedFunds memory data = locked[msg.sender];
         require(data.value != 0);
         require(data.until >= block.number);
+
+        // NOTE re-entrant transfer
+        msg.sender.call(data.value);
         delete locked[msg.sender];
-        msg.sender.transfer(data.value);
     }
 
     function withdraw() public {

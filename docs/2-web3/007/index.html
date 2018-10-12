@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Metamask website</title>
+  </head>
+  <body>
+    <h1>Hello Metamask!</h1>
+    <p>
+      Latest block is: <strong class="last-block">unknown</strong>
+    </p>
+    <script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js/dist/web3.min.js"></script>
+    <script>
+      window.addEventListener('load', async () => {
+        if (window.ethereum) {
+          window.web3 = new Web3(ethereum);
+          try {
+            // Poproś o szczegółowe dane usera (jak konta)
+            await ethereum.enable();
+            start()
+          } catch (error) {
+            alert(error)
+          }
+        } else if (window.web3) {
+          window.web3 = new Web3(web3.currentProvider);
+          start()
+        } else {
+          alert('Non-Ethereum browser detected. You should consider trying MetaMask!');
+        }
+      })
+
+      function start () {
+        web3.eth.getBlock('latest', (err, block) => {
+          console.log('block', err, block);
+          setTimeout(start, 2500);
+          if (err) {
+            return 
+          }
+
+          document.querySelector('.last-block').textContent = 
+            `#${block.number} (${block.hash.substr(0, 6)}..${block.hash.substr(-4)})`;
+        });
+      }
+    </script>
+  </body>
+</html>

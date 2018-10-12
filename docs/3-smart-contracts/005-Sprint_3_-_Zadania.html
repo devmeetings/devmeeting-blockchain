@@ -12,16 +12,25 @@
         <div class="xp-row center" style="height: 100%">
           <h1>Sprint 3 - Zadania</h1>
           <xp-tasks time="75">
+  <p>
+    Do wszystkich pisanych kontraktów rozważ napisanie testów w truffle (i zewnętrzny audyt :wink:).
+  </p>
   <ol>
     <li class="xp-basic">
-      TODO adres kontraktu i ABI
-      Wyślij transakcję do kontraktu za pomocą GUI (użyj "Watch Contract"). <br />
-      Adres: <code>0x...</code> <br />
-      ABI: <code>...</code> <br />
+      Korzystając z truffle napisz testy do kontraktu Lock. z poprzedniego slajdu.
+      Przetestuj następujące scenariusze:
+      <ul>
+        <li><code>lock</code> z konta 0, <code>withdraw</code> właściciela, <code>unlock</code> z konta 0</li>
+        <li><code>lock</code>, <code>lock</code>, <code>unlock</code> całości</li>
+        <li><code>lock</code>, <code>unlock</code> całości, ponowny <code>unlock</code></li>
+      </ul>
     </li>
     <li class="xp-advanced">
       Napisać Smart Contract w Solidity, który rozdziela płatność pomiędzy dwóch pre-definiowanych adresatów. <br />
       Przykład: Wysyłając transakcję z 5ETH do kontraktu, kontrakt wysyła po 2.5ETH do adresów A i B.
+    </li>
+    <li class="xp-extra">
+      Napisz kontrakt, który wykorzystuje dziurę w kontrakcie <code>Lock</code> z poprzedniego slajdu, aby wypłacić więcej środków niż jest zablokowane.
     </li>
     <li class="xp-extra">
       Napisz kontrakt który służy jako Escrow. <br />

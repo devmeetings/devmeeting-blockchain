@@ -12,9 +12,12 @@
         <div class="xp-row center" style="height: 100%">
           <h1>Sprint 4 - Zadania</h1>
           <xp-tasks time="75">
+  <p>
+    Zadania 1 i 3 można także wykonać w przeglądarce z Metamask.
+  </p>
   <ol>
     <li class="xp-basic">
-      Wyświetl stan (wartość, nadawcę, odbiorcę i arbitra) kontaktu Escrow na konsoli.
+      Wyświetl stan (wartość, nadawcę, odbiorcę i arbitra) kontaktu Escrow na konsoli / przeglądarce.
     </li>
     <li class="xp-basic">
       Napisz serwer HTTP, który zwraca szczegóły (stan i adres) z kontraktu Escrow w postaci JSON.
@@ -22,13 +25,15 @@
     <li class="xp-advanced">
       Napisz serwer HTTP, który jest arbitrem kontraktu Escrow. Powinien wysłać transakcję wypłaty w momencie kiedy
       ktoś wykona <code>POST /release/&lt;address&gt;</code> i określone dodatkowe warunki będą spełnione (np. określony czas lub balans na innym koncie).
+      <br />
+      W przypadku przeglądarki dodaj przycisk pozwalający na potwierdzenie lub anulowanie transakcji.
+    </li>
+    <li class="xp-extra">
+      Napisz kontrakt, ktory steruje dostępem do API serwera HTTP. Tylko adresy które opłaciły dostęp mają mieć możliwość korzystania z API. Zastanów się jak później weryfikować adresy w serwerze HTTP.
     </li>
     <li class="xp-extra">
       Napisz serwer HTTP, który pozwala na dostęp tylko w momencie kiedy została dokonana opłata. <br />
-      Dodaj nagłówek autoryzacyjny, który zawiera sygnaturę z adresu, który powinien mieć dostęp.
-    </li>
-    <li class="xp-extra">
-      Skorzystaj z truffle i przetestuj swój kontrakt.
+      Dodaj nagłówek autoryzacyjny, który zawiera dane wymagane przez Smart Contract (np. sygnaturę z adresu, który powinien mieć dostęp.).
     </li>
   </ol>
 </xp-tasks>
