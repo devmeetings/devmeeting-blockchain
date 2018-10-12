@@ -47,6 +47,15 @@
           "title": "Transakcje w Web3"
         },
         {
+          "name": "6-metamask",
+          "title": "Jak działa MetaMask?"
+        },
+        {
+          "name": "7-metamask2",
+          "title": "EIP-1102"
+        },
+
+        {
           "name": "tasks",
           "title": "Sprint 2 - Zadania"
         }

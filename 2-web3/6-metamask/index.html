@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Metamask website</title>
+  </head>
+  <body>
+    <h1>Hello Metamask!</h1>
+    <p>
+      Latest block is: <strong class="last-block">unknown</strong>
+    </p>
+    <script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js/dist/web3.min.js"></script>
+    <script>
+      window.addEventListener('load', () => {
+        // sprawdzamy czy nasza przeglądarka wspiera Web3
+        if (window.web3) {
+          // Tworzymy nową instancję globalnie (nasza wersja)
+          window.web3 = new Web3(web3.currentProvider);
+          // I uruchamiamy aplikację.
+          start()
+        } else {
+          // W przeciwnym wypadku odpalamy monit o instalację MetaMask.
+          alert('Non-Ethereum browser detected. You should consider trying MetaMask!');
+        }
+      })
+
+      function start () {
+        // Pobieramy najnowszy blok
+        web3.eth.getBlock('latest', (err, block) => {
+          console.log('block', err, block);
+          setTimeout(start, 2500);
+          if (err) {
+            return 
+          }
+
+          // 2/ I zapisujemy numer i hash do drzewa DOM.
+          document.querySelector('.last-block').textContent = 
+            `#${block.number} (${block.hash.substr(0, 6)}..${block.hash.substr(-4)})`;
+        });
+      }
+    </script>
+  </body>
+</html>

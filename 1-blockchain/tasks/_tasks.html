@@ -1,29 +1,29 @@
 <xp-tasks time="30">
   <ol>
     <li class="xp-basic">
-      Pobierz i uruchom węzeł sieci <a href="https://github.com/paritytech/parity/releases">Parity 1.10.6-stable</a>
+      Pobierz i uruchom węzeł sieci <a href="https://github.com/paritytech/parity/releases">Parity 2.0.6-stable</a>
     </li>
     <li class="xp-basic">
       Zsynchronizuj się z siecią testową. Użyj <a href="https://gist.github.com/tomusdrw/c87d5932a629f980ea89a883ab81cbdb">tego pliku konfiguracyjnego.</a>
       <br />
       <code>
-        $ parity --chain=./chain.json
+        $ parity --chain=./chain.json --jsonrpc-cors=all --ws-origins=all
       </code>
-      <br />
-      Przywróć konto używając frazy "devmeetings"
     </li>
     <li class="xp-basic">
-      Stwórz dodatkowe konto i prześlj sobie środki za pomocą GUI
+      Do Metamask zaimportuj konto na podstawie sekretu <code>e349ac9d1c914120282e49b3cc632c2cab71f86ab5602ab448b9ecf98930dbbd</code>. Powinieneś otrzymać adres <code>0x00a88fC3B3A86793De59c886e20B320A057a5723</code>
+    </li>
+    <li class="xp-basic">
+      Prześlij sobie środki na swoje główne konto Metamask.
     </li>
     <li class="xp-advanced">
-      Zainstaluj block explorer i obserwuj transakcje.
+      Zainstaluj i uruchom prosty Block Explorer. Dzięki niemu zobaczysz transakcje w sieci.
 
       <pre>
-        $ cd ~/.local/share/io.parity.ethereum/dapps
         $ git clone --depth=1 -b built https://github.com/tomusdrw/etherdisplay
+        $ cd etherdisplay
+        $ npx live-server
       </pre>
-
-      MacOS <code>~/Library/Application Support/io.parity.ethereum/dapps</code>, Windows <code>%AppData%\Parity\Ethereum\dapps</code>
     </li>
   </ol>
 </xp-tasks>
