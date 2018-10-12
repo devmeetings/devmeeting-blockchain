@@ -70,16 +70,6 @@
           "title": "Smart Contracts"
         },
         {
-          "name": "tasks",
-          "title": "Sprint 3 - Zadania"
-        }
-      ]
-    },
-    {
-      "name": "4-truffle",
-      "title": "Interakcja z kontraktami",
-      "slides": [
-        {
           "name": "1-web3",
           "title": "Kontrakty w Web3"
         },
@@ -88,12 +78,30 @@
           "title": "Wysyłanie transakcji"
         },
         {
-          "name": "3-server",
-          "title": "Serwer HTTP"
+          "name": "4-truffle",
+          "title": "Truffle Framework"
         },
         {
-          "name": "4-truffle",
-          "title": "Framework truffle"
+          "name": "tasks",
+          "title": "Sprint 3 - Zadania"
+        }
+      ]
+    },
+    {
+      "name": "4-web3-sc",
+      "title": "Interakcja z kontraktami",
+      "slides": [
+        {
+          "name": "1-patterns",
+          "title": "Solidity - wzorce"
+        },
+        {
+          "name": "2-escrow",
+          "title": "Kontrakt Escrow"
+        },
+        {
+          "name": "3-server",
+          "title": "Serwer HTTP"
         },
         {
           "name": "tasks",
@@ -105,10 +113,6 @@
       "name": "5-more",
       "title": "Blockchain. Co dalej.",
       "slides": [
-        {
-          "name": "1-patterns",
-          "title": "Solidity - wzorce"
-        },
         {
           "name": "2-rust",
           "title": "pWASM"
