@@ -2,7 +2,7 @@
   "xpla.version": 1,
   "name": "Blockchain DevMeeting",
   "link": "https://bit.ly/dm-blockchain",
-  "date": "Saturday, June 15, 2018",
+  "date": "Saturday, Oct 13, 2018",
   "author": {
     "name": "Tomasz Drwięga",
     "link": "https://twitter.com/tomusdrw"
@@ -114,10 +114,17 @@
       "title": "Blockchain. Co dalej.",
       "slides": [
         {
+          "name": "1-ethereum",
+          "title": "Ethereum"
+        },
+        {
           "name": "2-rust",
           "title": "pWASM"
+        },
+        {
+          "name": "3-others",
+          "title": "Inne platformy"
         }
-
       ]
     }
   ]
