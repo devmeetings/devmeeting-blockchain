@@ -7,19 +7,31 @@
         <title>Wysyłanie transakcji</title>
         <script src="https://xpla.org/static/js/slide_loader.3.0.0.js"></script>
       </head>
-
       <body class="xp-slide">
-        <div class="xp-row center with-comments">
+        <div class="xp-row with-comments">
           
-    <header><h1>Wysyłanie transakcji</h1></header>
-    
+    <div class="xp-column" style="width: 100%">
+      <xp-editor active="index.js" >
+        	<script id="index.js" highlight="0-27" type="application/octetstream" src="003/index.js"></script>
+	<script id="lock.abi.json" highlight="0-89" type="application/octetstream" src="003/lock.abi.json"></script>
+	<script id="package-lock.json" highlight="0-2415" type="application/octetstream" src="003/package-lock.json"></script>
+	<script id="package.json" highlight="0-9" type="application/octetstream" src="003/package.json"></script>
+      </xp-editor>
+    </div>
   
         </div>
         <div class="xp-resize-row"></div>
         <div class="xp-row comments">
-          <xp-annotations modal>
-            <header><h1 style="display: none">Wysyłanie transakcji</h1></header>
-            
+          <xp-annotations>
+            <header><h1>Wysyłanie transakcji</h1></header>
+            <details>
+  <h1>Web3 + Zmiany stanu</h1>
+  <p>
+    Wykonanie zmian wymaga umieszczenia transakcji w blockchainie. Wysyłając ją za pomocą web3 musimy poczekać
+    na potwierdzenia.
+  </p>
+</details>
+
           </xp-annotations>
         </div>
       </body>
